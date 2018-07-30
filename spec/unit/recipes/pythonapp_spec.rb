@@ -22,6 +22,10 @@ describe 'pythonapp::pythonapp' do
       expect(chef_run).to install_package 'python'
     end
 
+    it 'should install python-pip' do
+      expect(chef_run).to install_package 'python-pip'
+    end
+
 
   end
 end
