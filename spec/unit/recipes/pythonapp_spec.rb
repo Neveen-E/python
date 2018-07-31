@@ -26,5 +26,13 @@ describe 'pythonapp::pythonapp' do
       expect(chef_run).to install_package 'python-pip'
     end
 
+    it 'runs apt get update' do
+      expect(chef_run).to update_apt_update 'update_sources'
+    end
+
+    it 'should install libncurses5-dev' do
+      expect(chef_run).to install_package 'libncurses5-dev'
+    end
+
   end
 end
