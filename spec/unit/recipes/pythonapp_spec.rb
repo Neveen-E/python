@@ -34,5 +34,9 @@ describe 'pythonapp::pythonapp' do
       expect(chef_run).to install_package 'libncurses5-dev'
     end
 
+    it 'should install virtualenv' do
+      expect(chef_run).to install_package 'virtualenv'
+    end
+
   end
 end

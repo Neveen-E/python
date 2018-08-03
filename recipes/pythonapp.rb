@@ -7,3 +7,4 @@ apt_update 'update_sources' do
 end
 
 package 'libncurses5-dev'
+package 'virtualenv'
